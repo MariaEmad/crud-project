@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prosuct store.css">
+</head>
+<body>
+    <button  class="mode" id="light">light</button>
+    <button  class="mode" id="dark">dark</button>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>product manager system</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" name="" id="title" placeholder="title">
+            <div class="price">
+            
+                <input onkeyup="getTotal()" type="number" name="" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" name="" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" name="" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" name="" id="discount" placeholder="discount">
+                <small id="total"></small>               
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="category" placeholder="category">
+            <button id="create">Create</button>
+            <!-- <button onclick="updatenew()" id="updatenew">Update</button> -->
+
+
+        </div>
+    <div class="outputs">
+        <div class="search-block">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+                <div class="btn-search">
+                    <button onclick="searchbtn(this.id)" id="by-title">search by title</button>
+                    <button onclick="searchbtn(this.id)" id="by-category">search by category</button>
+                </div>
+                <button onclick="deleteAll()" id="delete-all">Delete All</button>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>samsung</td>
+                        <td>4000</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>2100</td>
+                        <td>phone</td>
+                        <td><button id="upadate">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>samsung</td>
+                        <td>4000</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>2100</td>
+                        <td>phone</td>
+                        <td><button id="upadate"></button></td>
+                        <td><button id="delete"></button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>samsung</td>
+                        <td>4000</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>2100</td>
+                        <td>phone</td>
+                        <td><button id="upadate"></button></td>
+                        <td><button id="delete"></button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>samsung</td>
+                        <td>4000</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>100</td>
+                        <td>2100</td>
+                        <td>phone</td>
+                        <td><button id="upadate"></button></td>
+                        <td><button id="delete"></button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="prosuct store.js"></script>
+</body>
+</html>
